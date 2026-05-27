@@ -308,8 +308,8 @@ const data = [
     "description": "Peshwa of the Maratha Empire during its major territorial expansion",
     "type": "emperor",
     "age": null,
-    "yearstart": 1770,
-    "yearend": 0
+    "yearstart": 1720,
+    "yearend": 1761
   },
   {
     "event": "FIRST TRANSATLANTIC TELEGRAPH CABLE",
