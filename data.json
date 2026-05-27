@@ -32,7 +32,7 @@
     "description": "Formation of the Sun and planets",
     "from-big-bang": null,
     "from-christ": null,
-    "from-now": 4500000000
+    "from-now": 4570000000
 },
 {
     "event": "GREAT OXYGENATION EVENT",
@@ -77,11 +77,18 @@
     "from-now": 300000
 },
 {
-    "event": "ART & MUSIC",
-    "description": "Earliest known symbolic art and musical instruments",
+    "event": "ART",
+    "description": "Earliest known symbolic art",
     "from-big-bang": null,
     "from-christ": null,
-    "from-now": 33000
+    "from-now": 45000
+},
+{
+    "event": "MUSIC",
+    "description": "Earliest known musical instruments",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 40000
 },
 {
     "event": "AGRICULTURE",
