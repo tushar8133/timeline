@@ -5,7 +5,7 @@
     "from-big-bang": 0,
     "from-christ": null,
     "from-now": null,
-    "type": ""
+    "type": "cosmos"
   },
   {
     "event": "ATOMS",
@@ -13,7 +13,7 @@
     "from-big-bang": 380000,
     "from-christ": null,
     "from-now": null,
-    "type": ""
+    "type": "cosmos"
   },
   {
     "event": "FIRST STARS",
@@ -21,7 +21,7 @@
     "from-big-bang": 100000000,
     "from-christ": null,
     "from-now": null,
-    "type": ""
+    "type": "cosmos"
   },
   {
     "event": "FIRST GALAXIES",
@@ -29,7 +29,7 @@
     "from-big-bang": 1000000000,
     "from-christ": null,
     "from-now": null,
-    "type": ""
+    "type": "cosmos"
   },
   {
     "event": "SOLAR SYSTEM",
@@ -37,7 +37,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 4570000000,
-    "type": ""
+    "type": "cosmos"
   },
   {
     "event": "GREAT OXYGENATION EVENT",
@@ -45,7 +45,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 2400000000,
-    "type": ""
+    "type": "earth"
   },
   {
     "event": "FIRST EUKARYOTES",
@@ -53,7 +53,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 2100000000,
-    "type": ""
+    "type": "earth"
   },
   {
     "event": "CAMBRIAN EXPLOSION",
@@ -61,7 +61,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 539000000,
-    "type": ""
+    "type": "earth"
   },
   {
     "event": "ORDOVICIAN ERA (1st EXTINCTION EVENT)",
@@ -69,7 +69,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 443000000,
-    "type": ""
+    "type": "earth"
   },
   {
     "event": "DEVONIAN AGE (2nd EXTINCTION EVENT)",
@@ -77,7 +77,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 374000000,
-    "type": ""
+    "type": "earth"
   },
   {
     "event": "PANGAEA SUPERCONTINENT",
@@ -85,7 +85,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 300000000,
-    "type": ""
+    "type": "earth"
   },
   {
     "event": "PERMIAN AGE (3rd EXTINCTION EVENT)",
@@ -93,7 +93,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 252000000,
-    "type": ""
+    "type": "earth"
   },
   {
     "event": "PANGAEA STARTED SEPARATING",
@@ -101,7 +101,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 245000000,
-    "type": ""
+    "type": "earth"
   },
   {
     "event": "FIRST DINOSAURS",
@@ -110,7 +110,7 @@
     "from-christ": null,
     "from-now": 249000000,
     "event-end": 230000000,
-    "type": ""
+    "type": "dinosaur"
   },
   {
     "event": "LATE TRIASSIC AGE (4th EXTINCTION EVENT)",
@@ -118,7 +118,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 200000000,
-    "type": ""
+    "type": "earth"
   },
   {
     "event": "DINOSAURS BECAME DOMINANT",
@@ -126,7 +126,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 201000000,
-    "type": ""
+    "type": "dinosaur"
   },
   {
     "event": "JURASSIC PERIOD",
@@ -135,7 +135,7 @@
     "from-christ": null,
     "from-now": 201000000,
     "event-end": 145000000,
-    "type": ""
+    "type": "dinosaur"
   },
   {
     "event": "CRETACEOUS PERIOD",
@@ -144,7 +144,7 @@
     "from-christ": null,
     "from-now": 145000000,
     "event-end": 66000000,
-    "type": ""
+    "type": "dinosaur"
   },
   {
     "event": "GRASS EVOLUTION",
@@ -152,7 +152,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 70000000,
-    "type": ""
+    "type": "earth"
   },
   {
     "event": "TYRANNOSAURUS REX AND TRICERATOPS",
@@ -160,7 +160,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 68000000,
-    "type": ""
+    "type": "dinosaur"
   },
   {
     "event": "CRETACEOUS PERIOD (5th EXTINCTION EVENT)",
@@ -168,7 +168,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 66000000,
-    "type": ""
+    "type": "earth"
   },
   {
     "event": "PALEOGENE PERIOD",
@@ -177,7 +177,7 @@
     "from-christ": null,
     "from-now": 66000000,
     "event-end": 23000000,
-    "type": ""
+    "type": "earth"
   },
   {
     "event": "EARLY HOMININS",
@@ -185,7 +185,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 3000000,
-    "type": ""
+    "type": "human"
   },
   {
     "event": "CONTROL OF FIRE",
@@ -193,7 +193,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 1000000,
-    "type": ""
+    "type": "human"
   },
   {
     "event": "HOMO SAPIENS",
@@ -201,7 +201,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 300000,
-    "type": ""
+    "type": "human"
   },
   {
     "event": "ART",
@@ -209,7 +209,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 45000,
-    "type": ""
+    "type": "human"
   },
   {
     "event": "MUSIC",
@@ -217,7 +217,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 40000,
-    "type": ""
+    "type": "human"
   },
   {
     "event": "EARLY HUMAN MIGRATION THROUGH BERING LAND BRIDGE",
@@ -225,7 +225,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 23000,
-    "type": ""
+    "type": "human"
   },
   {
     "event": "EARLY SOUTH AMERICAN ARTWORK",
@@ -233,7 +233,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 23000,
-    "type": ""
+    "type": "human"
   },
   {
     "event": "AGRICULTURE",
@@ -241,7 +241,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 12000,
-    "type": ""
+    "type": "human"
   },
   {
     "event": "HOLOCENE EPOCH",
@@ -249,7 +249,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 11700,
-    "type": ""
+    "type": "earth"
   },
   {
     "event": "HUMANS REACHED CENTRAL AMERICA",
@@ -257,7 +257,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 11500,
-    "type": ""
+    "type": "human"
   },
   {
     "event": "END OF LAST ICE AGE",
@@ -265,7 +265,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 10700,
-    "type": ""
+    "type": "earth"
   },
   {
     "event": "AMAZON GEOMETRIC POTTERY AND ROADS",
@@ -273,7 +273,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 8000,
-    "type": ""
+    "type": "human"
   },
   {
     "event": "MODERN SCIENCE",
@@ -281,7 +281,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 400,
-    "type": ""
+    "type": "science"
   },
   {
     "event": "POSSIBLE 6th EXTINCTION EVENT",
@@ -289,7 +289,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 200,
-    "type": ""
+    "type": "earth"
   },
   [
   {
@@ -299,7 +299,7 @@
     "from-christ": null,
     "from-now": 500,
     "event-end": 1530,
-    "type": ""
+    "type": "emperor"
   },
   {
     "event": "EMPEROR - HUMAYUN",
@@ -308,7 +308,7 @@
     "from-christ": null,
     "from-now": 496,
     "event-end": 1556,
-    "type": ""
+    "type": "emperor"
   },
   {
     "event": "EMPEROR - AKBAR",
@@ -317,7 +317,7 @@
     "from-christ": null,
     "from-now": 470,
     "event-end": 1605,
-    "type": ""
+    "type": "emperor"
   },
   {
     "event": "EMPEROR - JAHANGIR",
@@ -326,7 +326,7 @@
     "from-christ": null,
     "from-now": 421,
     "event-end": 1627,
-    "type": ""
+    "type": "emperor"
   },
   {
     "event": "EMPEROR - SHAH JAHAN",
@@ -335,7 +335,7 @@
     "from-christ": null,
     "from-now": 398,
     "event-end": 1658,
-    "type": ""
+    "type": "emperor"
   },
   {
     "event": "EMPEROR - AURANGZEB",
@@ -344,7 +344,7 @@
     "from-christ": null,
     "from-now": 368,
     "event-end": 1707,
-    "type": ""
+    "type": "emperor"
   },
   {
     "event": "EMPEROR - CHHATRAPATI SHIVAJI MAHARAJ",
@@ -353,7 +353,7 @@
     "from-christ": null,
     "from-now": 352,
     "event-end": 1680,
-    "type": ""
+    "type": "emperor"
   },
   {
     "event": "EMPEROR - SAMBHAJI MAHARAJ",
@@ -362,7 +362,7 @@
     "from-christ": null,
     "from-now": 345,
     "event-end": 1689,
-    "type": ""
+    "type": "emperor"
   },
   {
     "event": "EMPEROR - RAJARAM I",
@@ -371,7 +371,7 @@
     "from-christ": null,
     "from-now": 337,
     "event-end": 1700,
-    "type": ""
+    "type": "emperor"
   },
   {
     "event": "EMPEROR - SHAHUJI MAHARAJ",
@@ -380,7 +380,7 @@
     "from-christ": null,
     "from-now": 318,
     "event-end": 1749,
-    "type": ""
+    "type": "emperor"
   },
   {
     "event": "EMPEROR - BALAJI BAJI RAO",
@@ -389,7 +389,7 @@
     "from-christ": null,
     "from-now": 286,
     "event-end": 1761,
-    "type": ""
+    "type": "emperor"
   },
   {
     "event": "FIRST TRANSATLANTIC TELEGRAPH CABLE",
@@ -397,7 +397,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 168,
-    "type": ""
+    "type": "electronics"
   },
   {
     "event": "PHONOGRAPH",
@@ -405,7 +405,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 149,
-    "type": ""
+    "type": "electronics"
   },
   {
     "event": "FIRST OP-AMP USING VACUUM TUBES",
@@ -413,7 +413,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 85,
-    "type": ""
+    "type": "electronics"
   },
   {
     "event": "uA702 OP-AMP INTEGRATED CIRCUIT",
@@ -421,7 +421,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 63,
-    "type": ""
+    "type": "electronics"
   },
   {
     "event": "LM741 OP-AMP",
@@ -429,7 +429,7 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 58,
-    "type": ""
+    "type": "electronics"
   },
   {
     "event": "PRESENT",
@@ -437,6 +437,6 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 0,
-    "type": ""
+    "type": "present"
   }
 ]
