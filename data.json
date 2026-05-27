@@ -36,7 +36,7 @@
   },
   {
     "event": "GREAT OXYGENATION EVENT",
-    "description": "Oxygen began accumulating in Earth's atmosphere",
+    "description": "Oxygen began accumulating in Earth's atmosphere due to photosynthetic microorganisms",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 2400000000
@@ -50,64 +50,71 @@
   },
   {
     "event": "CAMBRIAN EXPLOSION",
-    "description": "Rapid diversification of animal life",
+    "description": "Rapid diversification of animal life in oceans; most major animal body plans emerged",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 539000000
   },
   {
-    "event": "ORDOVICIAN-SILURIAN EXTINCTION",
-    "description": "First major mass extinction; around 85% of marine species disappeared due to severe glaciation followed by rapid warming and sea-level changes",
+    "event": "ORDOVICIAN ERA (1st EXTINCTION EVENT)",
+    "description": "Around 85% of marine species became extinct. Massive glaciation caused sea levels to fall, followed by rapid warming and environmental instability",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 443000000
   },
   {
-    "event": "LATE DEVONIAN EXTINCTION",
-    "description": "Second major mass extinction; about 75% of species disappeared due to ocean oxygen depletion, climate fluctuations and volcanic activity",
+    "event": "DEVONIAN AGE (2nd EXTINCTION EVENT)",
+    "description": "Around 75% of species became extinct. Causes included fluctuating sea levels, global cooling and warming cycles, oxygen depletion in oceans and volcanic activity",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 374000000
   },
   {
-    "event": "PANGAEA FORMATION",
-    "description": "Most of Earth's landmass merged into the supercontinent Pangaea, producing large dry interior deserts",
+    "event": "PANGAEA SUPERCONTINENT",
+    "description": "Most landmasses merged into the supercontinent Pangaea. Interior regions became dry with desert-like climate and very low rainfall",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 300000000
   },
   {
-    "event": "PERMIAN-TRIASSIC EXTINCTION",
-    "description": "Largest known mass extinction; around 90–95% of marine species disappeared, mainly due to massive volcanism, global warming, ocean acidification and oxygen depletion",
+    "event": "PERMIAN AGE (3rd EXTINCTION EVENT)",
+    "description": "Largest extinction event in Earth's history; around 90–95% of marine species disappeared. Massive volcanic eruptions released huge amounts of carbon dioxide and sulphur dioxide, causing global warming, acid rain, ocean acidification and severe oxygen depletion. Ash and gases blocked sunlight, cooling the environment after intense warming",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 252000000
   },
   {
-    "event": "PANGAEA BREAKUP",
-    "description": "Pangaea started splitting apart during the Triassic period",
+    "event": "PANGAEA STARTED SEPARATING",
+    "description": "The supercontinent Pangaea began to break apart. Volcanic activity continued releasing greenhouse gases and sulphur compounds, contributing to unstable climate and ocean acidification",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 245000000
   },
   {
     "event": "FIRST DINOSAURS",
-    "description": "Earliest known dinosaurs such as Eoraptor appeared",
+    "description": "Early dinosaurs such as Eoraptor evolved. They were relatively small and became ancestors of later dinosaur groups",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 249000000,
     "event-end": 230000000
   },
   {
-    "event": "TRIASSIC-JURASSIC EXTINCTION",
-    "description": "Mass extinction linked to massive volcanism and climate change; dinosaurs became dominant afterward",
+    "event": "LATE TRIASSIC AGE (4th EXTINCTION EVENT)",
+    "description": "Around 80% of species became extinct due to massive volcanic activity associated with the opening of the Atlantic Ocean. High carbon dioxide levels caused global warming, acid rain and ocean acidification",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 200000000
+  },
+  {
+    "event": "DINOSAURS BECAME DOMINANT",
+    "description": "After the Triassic–Jurassic extinction event, dinosaurs became the dominant land animals. Unlike many reptiles, many dinosaurs were warm-blooded or partially warm-blooded, helping them survive changing climates. Crocodiles, turtles, early mammals and dinosaurs survived while many competing species disappeared",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 201000000
   },
   {
     "event": "JURASSIC PERIOD",
-    "description": "Dinosaurs diversified and became dominant; early birds appeared and Pangaea split into Laurasia and Gondwana",
+    "description": "Dinosaurs became very large and diversified widely. Early birds and flying reptiles appeared. Pangaea separated further into Laurasia and Gondwana",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 201000000,
@@ -115,7 +122,7 @@
   },
   {
     "event": "CRETACEOUS PERIOD",
-    "description": "Flowering plants spread widely; continents moved closer to modern positions; many dinosaur groups evolved",
+    "description": "Many varieties of dinosaurs evolved and dominated Earth. Flowering plants spread widely. Sea levels were high and global temperatures were warmer than today. Laurasia and Gondwana separated further and continents gradually moved toward modern positions",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 145000000,
@@ -123,28 +130,28 @@
   },
   {
     "event": "GRASS EVOLUTION",
-    "description": "Early grass ancestors appeared and began spreading",
+    "description": "Early grasses appeared and began spreading across some ecosystems",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 70000000
   },
   {
     "event": "TYRANNOSAURUS REX AND TRICERATOPS",
-    "description": "Large late Cretaceous dinosaurs such as T. rex and Triceratops flourished",
+    "description": "Large dinosaurs such as Tyrannosaurus rex and Triceratops flourished during the late Cretaceous period",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 68000000
   },
   {
-    "event": "K-Pg EXTINCTION",
-    "description": "Asteroid impact near present-day Yucatan caused mass extinction that ended non-avian dinosaurs; around 76% of species disappeared",
+    "event": "CRETACEOUS PERIOD (5th EXTINCTION EVENT)",
+    "description": "Around 76% of species became extinct after a massive asteroid about 10–15 km wide struck near the Yucatan Peninsula in present-day Mexico at extremely high speed. The impact generated shockwaves, heat pulses, wildfires, earthquakes, volcanic eruptions, acid rain and giant tsunamis. Dust and ash blocked sunlight for months to years, causing global cooling and collapse of plant life. Food chains collapsed as herbivores and then carnivores died. Small mammals, turtles, birds and scavengers survived more successfully. Carbon dioxide and sulphur released from rocks and volcanic activity later caused long-term global warming",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 66000000
   },
   {
     "event": "PALEOGENE PERIOD",
-    "description": "Mammals diversified rapidly after dinosaur extinction; early horses, whales, bats and primates evolved",
+    "description": "After the extinction of non-avian dinosaurs, mammals diversified rapidly. Early horses, whales, bats, primates, snakes and many modern bird groups evolved",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 66000000,
@@ -152,59 +159,66 @@
   },
   {
     "event": "EARLY HOMININS",
-    "description": "Human ancestors such as Australopithecus evolved in Africa",
+    "description": "Human ancestors such as Australopithecus evolved in Africa and began walking upright",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 3000000
   },
   {
     "event": "CONTROL OF FIRE",
-    "description": "Early humans learned to control fire",
+    "description": "Early humans learned to control fire for warmth, cooking and protection",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 1000000
   },
   {
     "event": "HOMO SAPIENS",
-    "description": "Appearance of modern humans",
+    "description": "Modern humans appeared in Africa",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 300000
   },
   {
     "event": "ART",
-    "description": "Earliest known symbolic cave art and carvings",
+    "description": "Earliest known cave paintings, carvings and symbolic art emerged",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 45000
   },
   {
     "event": "MUSIC",
-    "description": "Earliest known musical instruments such as bone flutes",
+    "description": "Earliest known musical instruments such as bone flutes were created",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 40000
   },
   {
     "event": "AGRICULTURE",
-    "description": "Beginning of organized farming and permanent settlements",
+    "description": "Humans began organized farming and formed permanent settlements",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 12000
   },
   {
     "event": "HOLOCENE EPOCH",
-    "description": "Current geological epoch that began after the last Ice Age",
+    "description": "Current geological epoch that began after the last Ice Age. Human civilization expanded rapidly during this period",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 11700
   },
   {
     "event": "MODERN SCIENCE",
-    "description": "Scientific Revolution and rise of modern scientific methods",
+    "description": "Scientific Revolution established modern scientific methods and accelerated technological advancement",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 400
+  },
+  {
+    "event": "POSSIBLE 6th EXTINCTION EVENT",
+    "description": "Many scientists consider current biodiversity loss as a possible sixth mass extinction driven by human activities such as climate change, habitat destruction, pollution and invasive species",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 200
   },
   {
     "event": "PRESENT",
