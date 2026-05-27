@@ -1,107 +1,107 @@
 [
     {
     "event": "BIG BANG",
+    "description": "Origin of the observable universe",
     "from-big-bang": 0,
     "from-christ": null,
-    "from-now": null,
-    "description": ""
+    "from-now": null
 },
 {
     "event": "ATOMS",
+    "description": "Formation of first neutral atoms after recombination",
     "from-big-bang": 380000,
     "from-christ": null,
-    "from-now": null,
-    "description": ""
+    "from-now": null
 },
 {
-    "event": "First STARS",
+    "event": "FIRST STARS",
+    "description": "First generation of stars formed",
     "from-big-bang": 100000000,
     "from-christ": null,
-    "from-now": null,
-    "description": ""
+    "from-now": null
 },
 {
-    "event": "GALAXIES",
+    "event": "FIRST GALAXIES",
+    "description": "Early galaxies formed",
     "from-big-bang": 1000000000,
     "from-christ": null,
-    "from-now": null,
-    "description": ""
+    "from-now": null
 },
 {
-    "event": "The SOLAR SYSTEM",
+    "event": "SOLAR SYSTEM",
+    "description": "Formation of the Sun and planets",
     "from-big-bang": null,
     "from-christ": null,
-    "from-now": 4500000000,
-    "description": ""
+    "from-now": 4500000000
 },
 {
-    "event": "The GREAT OXYGENATION",
+    "event": "GREAT OXYGENATION EVENT",
+    "description": "Oxygen began accumulating in Earth's atmosphere",
     "from-big-bang": null,
     "from-christ": null,
-    "from-now": 2400000000,
-    "description": ""
+    "from-now": 2400000000
 },
 {
-    "event": "EUKARYOTES",
+    "event": "FIRST EUKARYOTES",
+    "description": "Complex cells with nuclei appeared",
     "from-big-bang": null,
     "from-christ": null,
-    "from-now": 2100000000,
-    "description": ""
+    "from-now": 2100000000
 },
 {
     "event": "CAMBRIAN EXPLOSION",
+    "description": "Rapid diversification of animal life",
     "from-big-bang": null,
     "from-christ": null,
-    "from-now": 539000000,
-    "description": ""
+    "from-now": 539000000
 },
 {
     "event": "K-Pg EXTINCTION",
+    "description": "Mass extinction that ended non-avian dinosaurs",
     "from-big-bang": null,
     "from-christ": null,
-    "from-now": 66000000,
-    "description": ""
+    "from-now": 66000000
 },
 {
-    "event": "FIRE",
+    "event": "CONTROL OF FIRE",
+    "description": "Early humans controlled fire",
     "from-big-bang": null,
     "from-christ": null,
-    "from-now": 1000000,
-    "description": ""
+    "from-now": 1000000
 },
 {
-    "event": "H. SAPIENS",
+    "event": "HOMO SAPIENS",
+    "description": "Appearance of modern humans",
     "from-big-bang": null,
     "from-christ": null,
-    "from-now": 300000,
-    "description": ""
+    "from-now": 300000
 },
 {
     "event": "ART & MUSIC",
+    "description": "Earliest known symbolic art and musical instruments",
     "from-big-bang": null,
     "from-christ": null,
-    "from-now": 33000,
-    "description": ""
+    "from-now": 33000
 },
 {
     "event": "AGRICULTURE",
+    "description": "Beginning of organized farming",
     "from-big-bang": null,
     "from-christ": null,
-    "from-now": 12000,
-    "description": ""
+    "from-now": 12000
 },
 {
-    "event": "SCIENCE",
+    "event": "MODERN SCIENCE",
+    "description": "Scientific Revolution era",
     "from-big-bang": null,
     "from-christ": null,
-    "from-now": 400,
-    "description": ""
+    "from-now": 400
 },
 {
     "event": "PRESENT",
+    "description": "Current era",
     "from-big-bang": null,
     "from-christ": null,
-    "from-now": 0,
-    "description": ""
+    "from-now": 0
 }
 ]
