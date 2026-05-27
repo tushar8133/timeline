@@ -1,10 +1,10 @@
-[
+const data = [
   {
     "event": "BIG BANG",
     "description": "Origin of the observable universe",
     "from-big-bang": 0,
     "from-christ": null,
-    "from-now": null,
+    "from-now": 13800000000,
     "type": "cosmos"
   },
   {
@@ -12,7 +12,7 @@
     "description": "Formation of first neutral atoms after recombination",
     "from-big-bang": 380000,
     "from-christ": null,
-    "from-now": null,
+    "from-now": 13799620000,
     "type": "cosmos"
   },
   {
@@ -20,7 +20,7 @@
     "description": "First generation of stars formed",
     "from-big-bang": 100000000,
     "from-christ": null,
-    "from-now": null,
+    "from-now": 13700000000,
     "type": "cosmos"
   },
   {
@@ -28,7 +28,7 @@
     "description": "Early galaxies formed",
     "from-big-bang": 1000000000,
     "from-christ": null,
-    "from-now": null,
+    "from-now": 12800000000,
     "type": "cosmos"
   },
   {
@@ -291,7 +291,6 @@
     "from-now": 200,
     "type": "earth"
   },
-  [
   {
     "event": "EMPEROR - BABUR",
     "description": "Founder of the Mughal Empire in India after the First Battle of Panipat",

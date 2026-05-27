@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            height: 30px;
+        }
+        main {
+            position: fixed;
+            top: 30px;
+            height: calc(100% - 30px);
+            width: 100%;
+            background-color: #f0f0f0;
+            overflow-y: scroll;
+        }
+    </style>
+    <script src="data.js"></script>
+</head>
+<body>
+    <header>
+        <form onchange="redraw(this)">
+            <input name="search" type="search" placeholder="search">
+            <select name="units">
+                <option value="1000000000">billions</option>
+                <option value="10000000">crores</option>
+                <option value="1000000">millions</option>
+                <option value="100000">lakhs</option>
+                <option value="1000">thousands</option>
+                <option value="1">raw</option>
+            </select>
+            <select name="eventtype">
+                <option value="all">All Events</option>
+            </select>
+            <label>
+                <input name="sort" type="radio" value="ascending" checked> Ascending
+            </label>
+            <label>
+                <input name="sort" type="radio" value="descending"> Descending
+            </label>
+        </form>
+    </header>
+    <main>
+        <table border="1">
+            <thead></thead>
+                <tr>
+                    <th>Event</th>
+                    <th>Start</th>
+                    <th>End</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+    </main>
+    <script>
+
+        var eventTypes = [...new Set(data.map(item => item.type))];
+        eventTypes.forEach(type => {
+            document.querySelector('select[name="eventtype"]').insertAdjacentHTML('beforeend', `<option value="${type}">${type.charAt(0).toUpperCase() + type.slice(1)}</option>`);
+        });
+            
+
+        function redraw(form) {
+            const search = form.search.value.toLowerCase();
+            const units = parseInt(form.units.value);
+            const eventtype = form.eventtype.value;
+            const sort = form.sort.value;
+
+            let filteredData = data.filter((item) => {
+                return item.event.toLowerCase().includes(search) && (eventtype === 'all' || item.type === eventtype);
+            });
+
+            filteredData.sort((a, b) => {
+                if (sort === 'ascending') {
+                    return a['from-now'] - b['from-now'];
+                } else {
+                    return b['from-now'] - a['from-now'];
+                }
+            });
+
+            drawTable(filteredData);
+        }
+
+        function drawTable(tableData) {
+                document.querySelector('tbody').innerHTML = '';
+                tableData.forEach((item) => {
+                    document.querySelector('tbody').insertAdjacentHTML('beforeend', `<tr>
+                        <td>${item.event}</td>
+                        <td>${item['from-now']}</td>
+                        <td>${item['event-end'] || ''}</td>
+                        <td>${item.type}</td>
+                        <td>${item.description}</td>
+                    </tr>`);
+                });
+        }
+
+        drawTable(data);
+    </script>
+</body>
+</html>
