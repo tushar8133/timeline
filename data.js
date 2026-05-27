@@ -2,440 +2,334 @@ const data = [
   {
     "event": "BIG BANG",
     "description": "Origin of the observable universe",
-    "from-big-bang": 0,
-    "from-christ": null,
-    "from-now": 13800000000,
-    "type": "cosmos"
+    "type": "cosmos",
+    "age": 13800000000,
   },
   {
     "event": "ATOMS",
     "description": "Formation of first neutral atoms after recombination",
-    "from-big-bang": 380000,
-    "from-christ": null,
-    "from-now": 13799620000,
-    "type": "cosmos"
+    "type": "cosmos",
+    "age": 13799620000,
   },
   {
     "event": "FIRST STARS",
     "description": "First generation of stars formed",
-    "from-big-bang": 100000000,
-    "from-christ": null,
-    "from-now": 13700000000,
-    "type": "cosmos"
+    "type": "cosmos",
+    "age": 13700000000,
   },
   {
     "event": "FIRST GALAXIES",
     "description": "Early galaxies formed",
-    "from-big-bang": 1000000000,
-    "from-christ": null,
-    "from-now": 12800000000,
-    "type": "cosmos"
+    "type": "cosmos",
+    "age": 12800000000,
   },
   {
     "event": "SOLAR SYSTEM",
     "description": "Formation of the Sun and planets",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 4570000000,
-    "type": "cosmos"
+    "type": "cosmos",
+    "age": 4570000000,
   },
   {
     "event": "GREAT OXYGENATION EVENT",
     "description": "Oxygen began accumulating in Earth's atmosphere due to photosynthetic microorganisms",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 2400000000,
-    "type": "earth"
+    "type": "earth",
+    "age": 2400000000,
   },
   {
     "event": "FIRST EUKARYOTES",
     "description": "Complex cells with nuclei appeared",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 2100000000,
-    "type": "earth"
+    "type": "earth",
+    "age": 2100000000,
   },
   {
     "event": "CAMBRIAN EXPLOSION",
     "description": "Rapid diversification of animal life in oceans; most major animal body plans emerged",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 539000000,
-    "type": "earth"
+    "type": "earth",
+    "age": 539000000,
   },
   {
     "event": "ORDOVICIAN ERA (1st EXTINCTION EVENT)",
     "description": "Around 85% of marine species became extinct. Massive glaciation caused sea levels to fall, followed by rapid warming and environmental instability",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 443000000,
-    "type": "earth"
+    "type": "earth",
+    "age": 443000000,
   },
   {
     "event": "DEVONIAN AGE (2nd EXTINCTION EVENT)",
     "description": "Around 75% of species became extinct. Causes included fluctuating sea levels, global cooling and warming cycles, oxygen depletion in oceans and volcanic activity",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 374000000,
-    "type": "earth"
+    "type": "earth",
+    "age": 374000000,
   },
   {
     "event": "PANGAEA SUPERCONTINENT",
     "description": "Most landmasses merged into the supercontinent Pangaea. Interior regions became dry with desert-like climate and very low rainfall",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 300000000,
-    "type": "earth"
+    "type": "earth",
+    "age": 300000000,
   },
   {
     "event": "PERMIAN AGE (3rd EXTINCTION EVENT)",
     "description": "Largest extinction event in Earth's history; around 90–95% of marine species disappeared. Massive volcanic eruptions released huge amounts of carbon dioxide and sulphur dioxide, causing global warming, acid rain, ocean acidification and severe oxygen depletion. Ash and gases blocked sunlight, cooling the environment after intense warming",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 252000000,
-    "type": "earth"
+    "type": "earth",
+    "age": 252000000,
   },
   {
     "event": "PANGAEA STARTED SEPARATING",
     "description": "The supercontinent Pangaea began to break apart. Volcanic activity continued releasing greenhouse gases and sulphur compounds, contributing to unstable climate and ocean acidification",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 245000000,
-    "type": "earth"
+    "type": "earth",
+    "age": 245000000,
   },
   {
     "event": "FIRST DINOSAURS",
     "description": "Early dinosaurs such as Eoraptor evolved. They were relatively small and became ancestors of later dinosaur groups",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 249000000,
-    "event-end": 230000000,
-    "type": "dinosaur"
+    "type": "dinosaur",
+    "age": 249000000,
+    "event-end": 23000000
   },
   {
     "event": "LATE TRIASSIC AGE (4th EXTINCTION EVENT)",
     "description": "Around 80% of species became extinct due to massive volcanic activity associated with the opening of the Atlantic Ocean. High carbon dioxide levels caused global warming, acid rain and ocean acidification",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 200000000,
-    "type": "earth"
+    "type": "earth",
+    "age": 200000000,
   },
   {
     "event": "DINOSAURS BECAME DOMINANT",
     "description": "After the Triassic–Jurassic extinction event, dinosaurs became the dominant land animals. Unlike many reptiles, many dinosaurs were warm-blooded or partially warm-blooded, helping them survive changing climates. Crocodiles, turtles, early mammals and dinosaurs survived while many competing species disappeared",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 201000000,
-    "type": "dinosaur"
+    "type": "dinosaur",
+    "age": 201000000,
   },
   {
     "event": "JURASSIC PERIOD",
     "description": "Dinosaurs became very large and diversified widely. Early birds and flying reptiles appeared. Pangaea separated further into Laurasia and Gondwana",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 201000000,
-    "event-end": 145000000,
-    "type": "dinosaur"
+    "type": "dinosaur",
+    "age": 201000000,
+    "event-end": 145000000
   },
   {
     "event": "CRETACEOUS PERIOD",
     "description": "Many varieties of dinosaurs evolved and dominated Earth. Flowering plants spread widely. Sea levels were high and global temperatures were warmer than today. Laurasia and Gondwana separated further and continents gradually moved toward modern positions",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 145000000,
-    "event-end": 66000000,
-    "type": "dinosaur"
+    "type": "dinosaur",
+    "age": 145000000,
+    "event-end": 66000000
   },
   {
     "event": "GRASS EVOLUTION",
     "description": "Early grasses appeared and began spreading across some ecosystems",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 70000000,
-    "type": "earth"
+    "type": "earth",
+    "age": 70000000,
   },
   {
     "event": "TYRANNOSAURUS REX AND TRICERATOPS",
     "description": "Large dinosaurs such as Tyrannosaurus rex and Triceratops flourished during the late Cretaceous period",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 68000000,
-    "type": "dinosaur"
+    "type": "dinosaur",
+    "age": 68000000,
   },
   {
     "event": "CRETACEOUS PERIOD (5th EXTINCTION EVENT)",
     "description": "Around 76% of species became extinct after a massive asteroid about 10–15 km wide struck near the Yucatan Peninsula in present-day Mexico at extremely high speed. The impact generated shockwaves, heat pulses, wildfires, earthquakes, volcanic eruptions, acid rain and giant tsunamis. Dust and ash blocked sunlight for months to years, causing global cooling and collapse of plant life. Food chains collapsed as herbivores and then carnivores died. Small mammals, turtles, birds and scavengers survived more successfully. Carbon dioxide and sulphur released from rocks and volcanic activity later caused long-term global warming",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 66000000,
-    "type": "earth"
+    "type": "earth",
+    "age": 66000000,
   },
   {
     "event": "PALEOGENE PERIOD",
     "description": "After the extinction of non-avian dinosaurs, mammals diversified rapidly. Early horses, whales, bats, primates, snakes and many modern bird groups evolved",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 66000000,
-    "event-end": 23000000,
-    "type": "earth"
+    "type": "earth",
+    "age": 66000000,
+    "event-end": 23000000
   },
   {
     "event": "EARLY HOMININS",
     "description": "Human ancestors such as Australopithecus evolved in Africa and began walking upright",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 3000000,
-    "type": "human"
+    "type": "human",
+    "age": 3000000,
   },
   {
     "event": "CONTROL OF FIRE",
     "description": "Early humans learned to control fire for warmth, cooking and protection",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 1000000,
-    "type": "human"
+    "type": "human",
+    "age": 1000000,
   },
   {
     "event": "HOMO SAPIENS",
     "description": "Modern humans appeared in Africa",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 300000,
-    "type": "human"
+    "type": "human",
+    "age": 300000,
   },
   {
     "event": "ART",
     "description": "Earliest known cave paintings, carvings and symbolic art emerged",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 45000,
-    "type": "human"
+    "type": "human",
+    "age": 45000,
   },
   {
     "event": "MUSIC",
     "description": "Earliest known musical instruments such as bone flutes were created",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 40000,
-    "type": "human"
+    "type": "human",
+    "age": 40000,
   },
   {
     "event": "EARLY HUMAN MIGRATION THROUGH BERING LAND BRIDGE",
     "description": "Humans migrated from Siberia to Alaska through the Bering land bridge formed during the Ice Age when sea levels were lower",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 23000,
-    "type": "human"
+    "type": "human",
+    "age": 23000,
   },
   {
     "event": "EARLY SOUTH AMERICAN ARTWORK",
     "description": "Some of the oldest known artworks in South America indicate humans were already present before later migration waves from North America",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 23000,
-    "type": "human"
+    "type": "human",
+    "age": 23000,
   },
   {
     "event": "AGRICULTURE",
     "description": "Humans began organized farming and formed permanent settlements",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 12000,
-    "type": "human"
+    "type": "human",
+    "age": 12000,
   },
   {
     "event": "HOLOCENE EPOCH",
     "description": "Current geological epoch that began after the last Ice Age. Human civilization expanded rapidly during this period",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 11700,
-    "type": "earth"
+    "type": "earth",
+    "age": 11700,
   },
   {
     "event": "HUMANS REACHED CENTRAL AMERICA",
     "description": "Human populations migrating through the Americas reached Central America after moving south from Alaska",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 11500,
-    "type": "human"
+    "type": "human",
+    "age": 11500,
   },
   {
     "event": "END OF LAST ICE AGE",
     "description": "Global temperatures increased and glaciers began melting rapidly, causing sea levels to rise and changing human migration routes",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 10700,
-    "type": "earth"
+    "type": "earth",
+    "age": 10700,
   },
   {
     "event": "AMAZON GEOMETRIC POTTERY AND ROADS",
     "description": "Ancient geometric earthworks, pottery and road networks appeared in the Amazon region, indicating organized settlements and agriculture",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 8000,
-    "type": "human"
+    "type": "human",
+    "age": 8000,
   },
   {
     "event": "MODERN SCIENCE",
     "description": "Scientific Revolution established modern scientific methods and accelerated technological advancement",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 400,
-    "type": "science"
+    "type": "science",
+    "age": 400,
   },
   {
     "event": "POSSIBLE 6th EXTINCTION EVENT",
     "description": "Many scientists consider current biodiversity loss as a possible sixth mass extinction driven by human activities such as climate change, habitat destruction, pollution and invasive species",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 200,
-    "type": "earth"
+    "type": "earth",
+    "age": 200,
   },
   {
     "event": "EMPEROR - BABUR",
     "description": "Founder of the Mughal Empire in India after the First Battle of Panipat",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 500,
-    "event-end": 1530,
-    "type": "emperor"
+    "type": "emperor",
+    "age": 500,
+    "event-end": 1530
   },
   {
     "event": "EMPEROR - HUMAYUN",
     "description": "Second Mughal emperor and son of Babur",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 496,
-    "event-end": 1556,
-    "type": "emperor"
+    "type": "emperor",
+    "age": 496,
+    "event-end": 1556
   },
   {
     "event": "EMPEROR - AKBAR",
     "description": "Third Mughal emperor known for expansion, administration and religious tolerance",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 470,
-    "event-end": 1605,
-    "type": "emperor"
+    "type": "emperor",
+    "age": 470,
+    "event-end": 1605
   },
   {
     "event": "EMPEROR - JAHANGIR",
     "description": "Fourth Mughal emperor known for art, culture and administrative stability",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 421,
-    "event-end": 1627,
-    "type": "emperor"
+    "type": "emperor",
+    "age": 421,
+    "event-end": 1627
   },
   {
     "event": "EMPEROR - SHAH JAHAN",
     "description": "Fifth Mughal emperor who commissioned the Taj Mahal",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 398,
-    "event-end": 1658,
-    "type": "emperor"
+    "type": "emperor",
+    "age": 398,
+    "event-end": 1658
   },
   {
     "event": "EMPEROR - AURANGZEB",
     "description": "Sixth Mughal emperor under whom the Mughal Empire reached its greatest territorial extent",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 368,
-    "event-end": 1707,
-    "type": "emperor"
+    "type": "emperor",
+    "age": 368,
+    "event-end": 1707
   },
   {
     "event": "EMPEROR - CHHATRAPATI SHIVAJI MAHARAJ",
     "description": "Founder of the Maratha Empire and pioneer of guerrilla warfare in India",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 352,
-    "event-end": 1680,
-    "type": "emperor"
+    "type": "emperor",
+    "age": 352,
+    "event-end": 1680
   },
   {
     "event": "EMPEROR - SAMBHAJI MAHARAJ",
     "description": "Second ruler of the Maratha Empire and eldest son of Shivaji Maharaj",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 345,
-    "event-end": 1689,
-    "type": "emperor"
+    "type": "emperor",
+    "age": 345,
+    "event-end": 1689
   },
   {
     "event": "EMPEROR - RAJARAM I",
     "description": "Maratha ruler who continued resistance against the Mughal Empire after Sambhaji",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 337,
-    "event-end": 1700,
-    "type": "emperor"
+    "type": "emperor",
+    "age": 337,
+    "event-end": 1700
   },
   {
     "event": "EMPEROR - SHAHUJI MAHARAJ",
     "description": "Maratha ruler who strengthened the Maratha Confederacy after release from Mughal captivity",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 318,
-    "event-end": 1749,
-    "type": "emperor"
+    "type": "emperor",
+    "age": 318,
+    "event-end": 1749
   },
   {
     "event": "EMPEROR - BALAJI BAJI RAO",
     "description": "Peshwa of the Maratha Empire during its major territorial expansion",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 286,
-    "event-end": 1761,
-    "type": "emperor"
+    "type": "emperor",
+    "age": 286,
+    "event-end": 1761
   },
   {
     "event": "FIRST TRANSATLANTIC TELEGRAPH CABLE",
     "description": "First successful telegraph communication cable laid between North America and Europe using copper lines between Canada and Ireland",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 168,
-    "type": "electronics"
+    "type": "electronics",
+    "age": 168,
   },
   {
     "event": "PHONOGRAPH",
     "description": "Thomas Edison invented the phonograph, the first device capable of recording and reproducing sound",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 149,
-    "type": "electronics"
+    "type": "electronics",
+    "age": 149,
   },
   {
     "event": "FIRST OP-AMP USING VACUUM TUBES",
     "description": "Early operational amplifiers were built using vacuum tube technology for analog computation and signal processing",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 85,
-    "type": "electronics"
+    "type": "electronics",
+    "age": 85,
   },
   {
     "event": "uA702 OP-AMP INTEGRATED CIRCUIT",
     "description": "Fairchild Semiconductor introduced the uA702, one of the first monolithic integrated circuit operational amplifiers",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 63,
-    "type": "electronics"
+    "type": "electronics",
+    "age": 63,
   },
   {
     "event": "LM741 OP-AMP",
     "description": "Fairchild Semiconductor released the LM741, a widely used general-purpose operational amplifier integrated circuit",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 58,
-    "type": "electronics"
+    "type": "electronics",
+    "age": 58,
   },
   {
     "event": "PRESENT",
     "description": "Current era",
-    "from-big-bang": null,
-    "from-christ": null,
-    "from-now": 0,
-    "type": "present"
+    "type": "present",
+    "age": 0,
   }
 ]
