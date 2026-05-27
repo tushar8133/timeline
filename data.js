@@ -81,8 +81,9 @@ const data = [
     "event": "FIRST DINOSAURS",
     "description": "Early dinosaurs such as Eoraptor evolved. They were relatively small and became ancestors of later dinosaur groups",
     "type": "dinosaur",
-    "age": 249000000,
-    "event-end": 23000000
+    "age": null,
+    "yearstart": 0,
+    "yearend": 0
   },
   {
     "event": "LATE TRIASSIC AGE (4th EXTINCTION EVENT)",
@@ -100,15 +101,17 @@ const data = [
     "event": "JURASSIC PERIOD",
     "description": "Dinosaurs became very large and diversified widely. Early birds and flying reptiles appeared. Pangaea separated further into Laurasia and Gondwana",
     "type": "dinosaur",
-    "age": 201000000,
-    "event-end": 145000000
+    "age": null,
+    "yearstart": 0,
+    "yearend": 0
   },
   {
     "event": "CRETACEOUS PERIOD",
     "description": "Many varieties of dinosaurs evolved and dominated Earth. Flowering plants spread widely. Sea levels were high and global temperatures were warmer than today. Laurasia and Gondwana separated further and continents gradually moved toward modern positions",
     "type": "dinosaur",
-    "age": 145000000,
-    "event-end": 66000000
+    "age": null,
+    "yearstart": 0,
+    "yearend": 0
   },
   {
     "event": "GRASS EVOLUTION",
@@ -132,8 +135,9 @@ const data = [
     "event": "PALEOGENE PERIOD",
     "description": "After the extinction of non-avian dinosaurs, mammals diversified rapidly. Early horses, whales, bats, primates, snakes and many modern bird groups evolved",
     "type": "earth",
-    "age": 66000000,
-    "event-end": 23000000
+    "age": null,
+    "yearstart": 0,
+    "yearend": 0
   },
   {
     "event": "EARLY HOMININS",
@@ -223,78 +227,89 @@ const data = [
     "event": "EMPEROR - BABUR",
     "description": "Founder of the Mughal Empire in India after the First Battle of Panipat",
     "type": "emperor",
-    "age": 500,
-    "event-end": 1530
+    "age": null,
+    "yearstart": 0,
+    "yearend": 0
   },
   {
     "event": "EMPEROR - HUMAYUN",
     "description": "Second Mughal emperor and son of Babur",
     "type": "emperor",
-    "age": 496,
-    "event-end": 1556
+    "age": null,
+    "yearstart": 0,
+    "yearend": 0
   },
   {
     "event": "EMPEROR - AKBAR",
     "description": "Third Mughal emperor known for expansion, administration and religious tolerance",
     "type": "emperor",
-    "age": 470,
-    "event-end": 1605
+    "age": null,
+    "yearstart": 0,
+    "yearend": 0
   },
   {
     "event": "EMPEROR - JAHANGIR",
     "description": "Fourth Mughal emperor known for art, culture and administrative stability",
     "type": "emperor",
-    "age": 421,
-    "event-end": 1627
+    "age": null,
+    "yearstart": 0,
+    "yearend": 0
   },
   {
     "event": "EMPEROR - SHAH JAHAN",
     "description": "Fifth Mughal emperor who commissioned the Taj Mahal",
     "type": "emperor",
-    "age": 398,
-    "event-end": 1658
+    "age": null,
+    "yearstart": 0,
+    "yearend": 0
   },
   {
     "event": "EMPEROR - AURANGZEB",
     "description": "Sixth Mughal emperor under whom the Mughal Empire reached its greatest territorial extent",
     "type": "emperor",
-    "age": 368,
-    "event-end": 1707
+    "age": null,
+    "yearstart": 0,
+    "yearend": 0
   },
   {
     "event": "EMPEROR - CHHATRAPATI SHIVAJI MAHARAJ",
     "description": "Founder of the Maratha Empire and pioneer of guerrilla warfare in India",
     "type": "emperor",
-    "age": 352,
-    "event-end": 1680
+    "age": null,
+    "yearstart": 0,
+    "yearend": 0
   },
   {
     "event": "EMPEROR - SAMBHAJI MAHARAJ",
     "description": "Second ruler of the Maratha Empire and eldest son of Shivaji Maharaj",
     "type": "emperor",
-    "age": 345,
-    "event-end": 1689
+    "age": null,
+    "yearstart": 0,
+    "yearend": 0
   },
   {
     "event": "EMPEROR - RAJARAM I",
     "description": "Maratha ruler who continued resistance against the Mughal Empire after Sambhaji",
     "type": "emperor",
-    "age": 337,
-    "event-end": 1700
+    "age": null,
+    "yearstart": 0,
+    "yearend": 0
   },
   {
     "event": "EMPEROR - SHAHUJI MAHARAJ",
     "description": "Maratha ruler who strengthened the Maratha Confederacy after release from Mughal captivity",
     "type": "emperor",
-    "age": 318,
-    "event-end": 1749
+    "age": null,
+    "yearstart": 0,
+    "yearend": 0
   },
   {
     "event": "EMPEROR - BALAJI BAJI RAO",
     "description": "Peshwa of the Maratha Empire during its major territorial expansion",
     "type": "emperor",
-    "age": 286,
-    "event-end": 1761
+    "age": null,
+    "yearstart": 0,
+    "yearend": 0
   },
   {
     "event": "FIRST TRANSATLANTIC TELEGRAPH CABLE",
