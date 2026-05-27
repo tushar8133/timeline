@@ -193,6 +193,20 @@
     "from-now": 40000
   },
   {
+    "event": "EARLY HUMAN MIGRATION THROUGH BERING LAND BRIDGE",
+    "description": "Humans migrated from Siberia to Alaska through the Bering land bridge formed during the Ice Age when sea levels were lower",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 23000
+  },
+  {
+    "event": "EARLY SOUTH AMERICAN ARTWORK",
+    "description": "Some of the oldest known artworks in South America indicate humans were already present before later migration waves from North America",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 23000
+  },
+  {
     "event": "AGRICULTURE",
     "description": "Humans began organized farming and formed permanent settlements",
     "from-big-bang": null,
@@ -205,6 +219,27 @@
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 11700
+  },
+  {
+    "event": "HUMANS REACHED CENTRAL AMERICA",
+    "description": "Human populations migrating through the Americas reached Central America after moving south from Alaska",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 11500
+  },
+  {
+    "event": "END OF LAST ICE AGE",
+    "description": "Global temperatures increased and glaciers began melting rapidly, causing sea levels to rise and changing human migration routes",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 10700
+  },
+  {
+    "event": "AMAZON GEOMETRIC POTTERY AND ROADS",
+    "description": "Ancient geometric earthworks, pottery and road networks appeared in the Amazon region, indicating organized settlements and agriculture",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 8000
   },
   {
     "event": "MODERN SCIENCE",
@@ -225,7 +260,7 @@
     "event": "EMPEROR - BABUR",
     "description": "Founder of the Mughal Empire in India after the First Battle of Panipat",
     "from-big-bang": null,
-    "from-christ": 1526,
+    "from-christ": null,
     "from-now": 500,
     "event-end": 1530
   },
@@ -233,7 +268,7 @@
     "event": "EMPEROR - HUMAYUN",
     "description": "Second Mughal emperor and son of Babur",
     "from-big-bang": null,
-    "from-christ": 1530,
+    "from-christ": null,
     "from-now": 496,
     "event-end": 1556
   },
@@ -241,7 +276,7 @@
     "event": "EMPEROR - AKBAR",
     "description": "Third Mughal emperor known for expansion, administration and religious tolerance",
     "from-big-bang": null,
-    "from-christ": 1556,
+    "from-christ": null,
     "from-now": 470,
     "event-end": 1605
   },
@@ -249,7 +284,7 @@
     "event": "EMPEROR - JAHANGIR",
     "description": "Fourth Mughal emperor known for art, culture and administrative stability",
     "from-big-bang": null,
-    "from-christ": 1605,
+    "from-christ": null,
     "from-now": 421,
     "event-end": 1627
   },
@@ -257,7 +292,7 @@
     "event": "EMPEROR - SHAH JAHAN",
     "description": "Fifth Mughal emperor who commissioned the Taj Mahal",
     "from-big-bang": null,
-    "from-christ": 1628,
+    "from-christ": null,
     "from-now": 398,
     "event-end": 1658
   },
@@ -265,7 +300,7 @@
     "event": "EMPEROR - AURANGZEB",
     "description": "Sixth Mughal emperor under whom the Mughal Empire reached its greatest territorial extent",
     "from-big-bang": null,
-    "from-christ": 1658,
+    "from-christ": null,
     "from-now": 368,
     "event-end": 1707
   },
@@ -273,7 +308,7 @@
     "event": "EMPEROR - CHHATRAPATI SHIVAJI MAHARAJ",
     "description": "Founder of the Maratha Empire and pioneer of guerrilla warfare in India",
     "from-big-bang": null,
-    "from-christ": 1674,
+    "from-christ": null,
     "from-now": 352,
     "event-end": 1680
   },
@@ -281,7 +316,7 @@
     "event": "EMPEROR - SAMBHAJI MAHARAJ",
     "description": "Second ruler of the Maratha Empire and eldest son of Shivaji Maharaj",
     "from-big-bang": null,
-    "from-christ": 1681,
+    "from-christ": null,
     "from-now": 345,
     "event-end": 1689
   },
@@ -289,7 +324,7 @@
     "event": "EMPEROR - RAJARAM I",
     "description": "Maratha ruler who continued resistance against the Mughal Empire after Sambhaji",
     "from-big-bang": null,
-    "from-christ": 1689,
+    "from-christ": null,
     "from-now": 337,
     "event-end": 1700
   },
@@ -297,7 +332,7 @@
     "event": "EMPEROR - SHAHUJI MAHARAJ",
     "description": "Maratha ruler who strengthened the Maratha Confederacy after release from Mughal captivity",
     "from-big-bang": null,
-    "from-christ": 1708,
+    "from-christ": null,
     "from-now": 318,
     "event-end": 1749
   },
@@ -305,7 +340,7 @@
     "event": "EMPEROR - BALAJI BAJI RAO",
     "description": "Peshwa of the Maratha Empire during its major territorial expansion",
     "from-big-bang": null,
-    "from-christ": 1740,
+    "from-christ": null,
     "from-now": 286,
     "event-end": 1761
   },
@@ -313,35 +348,35 @@
     "event": "FIRST TRANSATLANTIC TELEGRAPH CABLE",
     "description": "First successful telegraph communication cable laid between North America and Europe using copper lines between Canada and Ireland",
     "from-big-bang": null,
-    "from-christ": 1858,
+    "from-christ": null,
     "from-now": 168
   },
   {
     "event": "PHONOGRAPH",
     "description": "Thomas Edison invented the phonograph, the first device capable of recording and reproducing sound",
     "from-big-bang": null,
-    "from-christ": 1877,
+    "from-christ": null,
     "from-now": 149
   },
   {
     "event": "FIRST OP-AMP USING VACUUM TUBES",
     "description": "Early operational amplifiers were built using vacuum tube technology for analog computation and signal processing",
     "from-big-bang": null,
-    "from-christ": 1941,
+    "from-christ": null,
     "from-now": 85
   },
   {
     "event": "uA702 OP-AMP INTEGRATED CIRCUIT",
     "description": "Fairchild Semiconductor introduced the uA702, one of the first monolithic integrated circuit operational amplifiers",
     "from-big-bang": null,
-    "from-christ": 1963,
+    "from-christ": null,
     "from-now": 63
   },
   {
     "event": "LM741 OP-AMP",
     "description": "Fairchild Semiconductor released the LM741, a widely used general-purpose operational amplifier integrated circuit",
     "from-big-bang": null,
-    "from-christ": 1968,
+    "from-christ": null,
     "from-now": 58
   },
   {
