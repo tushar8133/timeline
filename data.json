@@ -1,0 +1,107 @@
+[
+    {
+    "event": "BIG BANG",
+    "from-big-bang": 0,
+    "from-christ": null,
+    "from-now": null,
+    "description": ""
+},
+{
+    "event": "ATOMS",
+    "from-big-bang": 380000,
+    "from-christ": null,
+    "from-now": null,
+    "description": ""
+},
+{
+    "event": "First STARS",
+    "from-big-bang": 100000000,
+    "from-christ": null,
+    "from-now": null,
+    "description": ""
+},
+{
+    "event": "GALAXIES",
+    "from-big-bang": 1000000000,
+    "from-christ": null,
+    "from-now": null,
+    "description": ""
+},
+{
+    "event": "The SOLAR SYSTEM",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 4500000000,
+    "description": ""
+},
+{
+    "event": "The GREAT OXYGENATION",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 2400000000,
+    "description": ""
+},
+{
+    "event": "EUKARYOTES",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 2100000000,
+    "description": ""
+},
+{
+    "event": "CAMBRIAN EXPLOSION",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 539000000,
+    "description": ""
+},
+{
+    "event": "K-Pg EXTINCTION",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 66000000,
+    "description": ""
+},
+{
+    "event": "FIRE",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 1000000,
+    "description": ""
+},
+{
+    "event": "H. SAPIENS",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 300000,
+    "description": ""
+},
+{
+    "event": "ART & MUSIC",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 33000,
+    "description": ""
+},
+{
+    "event": "AGRICULTURE",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 12000,
+    "description": ""
+},
+{
+    "event": "SCIENCE",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 400,
+    "description": ""
+},
+{
+    "event": "PRESENT",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 0,
+    "description": ""
+}
+]
