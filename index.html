@@ -52,12 +52,12 @@
         </form>
     </header>
     <main>
-        <table border="1">
+        <table border="1" cellpadding="10">
             <thead>
                 <tr>
                     <th>Type</th>
-                    <th>Event</th>
-                    <th>Age</th>
+                    <th width="200">Event</th>
+                    <th width="100">Age</th>
                     <th>Year Start</th>
                     <th>Year End</th>
                     <th>Description</th>
@@ -107,7 +107,8 @@
                         }
                     }
                     const divisor = parseInt(selectedOption.value);
-                    return {...item, age:  `${(item.age / divisor).toFixed(2)} ${selectedOption.text}` }
+                    const noUnits = selectedOption.text === 'years';
+                    return {...item, age:  `${(item.age / divisor).toFixed(noUnits ? 0 : 2)} ${noUnits ? 'years' : selectedOption.text}` }
                 }
             });
 
@@ -128,7 +129,7 @@
                 });
         }
 
-        drawTable(data);
+        redraw(document.forms[0]);
     </script>
 </body>
 </html>
