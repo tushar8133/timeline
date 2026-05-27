@@ -228,87 +228,87 @@ const data = [
     "description": "Founder of the Mughal Empire in India after the First Battle of Panipat",
     "type": "emperor",
     "age": null,
-    "yearstart": 0,
-    "yearend": 0
+    "yearstart": 1526,
+    "yearend": 1556
   },
   {
     "event": "EMPEROR - HUMAYUN",
     "description": "Second Mughal emperor and son of Babur",
     "type": "emperor",
     "age": null,
-    "yearstart": 0,
-    "yearend": 0
+    "yearstart": 1556,
+    "yearend": 1605
   },
   {
     "event": "EMPEROR - AKBAR",
     "description": "Third Mughal emperor known for expansion, administration and religious tolerance",
     "type": "emperor",
     "age": null,
-    "yearstart": 0,
-    "yearend": 0
+    "yearstart": 1605,
+    "yearend": 1627
   },
   {
     "event": "EMPEROR - JAHANGIR",
     "description": "Fourth Mughal emperor known for art, culture and administrative stability",
     "type": "emperor",
     "age": null,
-    "yearstart": 0,
-    "yearend": 0
+    "yearstart": 1627,
+    "yearend": 1658
   },
   {
     "event": "EMPEROR - SHAH JAHAN",
     "description": "Fifth Mughal emperor who commissioned the Taj Mahal",
     "type": "emperor",
     "age": null,
-    "yearstart": 0,
-    "yearend": 0
+    "yearstart": 1658,
+    "yearend": 1674
   },
   {
     "event": "EMPEROR - AURANGZEB",
     "description": "Sixth Mughal emperor under whom the Mughal Empire reached its greatest territorial extent",
     "type": "emperor",
     "age": null,
-    "yearstart": 0,
-    "yearend": 0
+    "yearstart": 1674,
+    "yearend": 1680
   },
   {
     "event": "EMPEROR - CHHATRAPATI SHIVAJI MAHARAJ",
     "description": "Founder of the Maratha Empire and pioneer of guerrilla warfare in India",
     "type": "emperor",
     "age": null,
-    "yearstart": 0,
-    "yearend": 0
+    "yearstart": 1680,
+    "yearend": 1689
   },
   {
     "event": "EMPEROR - SAMBHAJI MAHARAJ",
     "description": "Second ruler of the Maratha Empire and eldest son of Shivaji Maharaj",
     "type": "emperor",
     "age": null,
-    "yearstart": 0,
-    "yearend": 0
+    "yearstart": 1689,
+    "yearend": 1708
   },
   {
     "event": "EMPEROR - RAJARAM I",
     "description": "Maratha ruler who continued resistance against the Mughal Empire after Sambhaji",
     "type": "emperor",
     "age": null,
-    "yearstart": 0,
-    "yearend": 0
+    "yearstart": 1708,
+    "yearend": 1749
   },
   {
     "event": "EMPEROR - SHAHUJI MAHARAJ",
     "description": "Maratha ruler who strengthened the Maratha Confederacy after release from Mughal captivity",
     "type": "emperor",
     "age": null,
-    "yearstart": 0,
-    "yearend": 0
+    "yearstart": 1749,
+    "yearend": 1770
   },
   {
     "event": "EMPEROR - BALAJI BAJI RAO",
     "description": "Peshwa of the Maratha Empire during its major territorial expansion",
     "type": "emperor",
     "age": null,
-    "yearstart": 0,
+    "yearstart": 1770,
     "yearend": 0
   },
   {
