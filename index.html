@@ -32,27 +32,28 @@
         <form onchange="redraw(this)">
             <input name="search" type="search" placeholder="search">
             <select name="units">
+                <option value="0">Auto</option>
                 <option value="1000000000">billions</option>
                 <option value="10000000">crores</option>
                 <option value="1000000">millions</option>
                 <option value="100000">lakhs</option>
                 <option value="1000">thousands</option>
-                <option value="1">raw</option>
+                <option value="1">years</option>
             </select>
             <select name="eventtype">
                 <option value="all">All Events</option>
             </select>
             <label>
-                <input name="sort" type="radio" value="ascending" checked> Ascending
+                <input name="sort" type="radio" value="+1"> Ascending
             </label>
             <label>
-                <input name="sort" type="radio" value="descending"> Descending
+                <input name="sort" type="radio" value="-1" checked> Descending
             </label>
         </form>
     </header>
     <main>
         <table border="1">
-            <thead></thead>
+            <thead>
                 <tr>
                     <th>Event</th>
                     <th>Start</th>
@@ -64,7 +65,9 @@
             <tbody>
             </tbody>
             <tfoot>
-
+                <tr>
+                    <td colspan="5">Sources</a></td>
+                </tr>
             </tfoot>
         </table>
     </main>
@@ -77,24 +80,36 @@
             
 
         function redraw(form) {
-            const search = form.search.value.toLowerCase();
-            const units = parseInt(form.units.value);
-            const eventtype = form.eventtype.value;
-            const sort = form.sort.value;
-
-            let filteredData = data.filter((item) => {
-                return item.event.toLowerCase().includes(search) && (eventtype === 'all' || item.type === eventtype);
-            });
-
-            filteredData.sort((a, b) => {
-                if (sort === 'ascending') {
-                    return a['from-now'] - b['from-now'];
+            const fData = new FormData(form);
+            const fromEntries = Array.from(fData);
+            const formObject = Object.fromEntries(fromEntries);
+            console.log(formObject)
+            const searchValue = form.search.value.toLowerCase();
+            const unitValue = parseInt(form.units.value);
+            const unitText = form.units.options[form.units.selectedIndex].text;
+            const typeValue = form.eventtype.value;
+            const sortValue = parseInt(form.sort.value);
+            
+            let processType = data.filter((item) => (typeValue === 'all' || typeValue === item.type));
+            let processSort = processType.sort((a, b) => sortValue > 0 ? a.age - b.age : b.age - a.age);
+            let processUnit = processSort.map((item) => {
+                if (unitValue) {
+                    return {...item, age:  `${item.age / unitValue} ${unitText.slice(0,2)}` }
                 } else {
-                    return b['from-now'] - a['from-now'];
+                    const optionsArray = Array.from(form.units.options).slice(1);
+                    let selectedOption = optionsArray[optionsArray.length - 1];
+                    for (let option of optionsArray) {
+                        if (parseInt(option.value) <= item.age) {
+                            selectedOption = option;
+                            break;
+                        }
+                    }
+                    const divisor = parseInt(selectedOption.value);
+                    return {...item, age:  `${(item.age / divisor).toFixed(2)} ${selectedOption.text}` }
                 }
             });
 
-            drawTable(filteredData);
+            drawTable(processUnit);
         }
 
         function drawTable(tableData) {
@@ -102,7 +117,7 @@
                 tableData.forEach((item) => {
                     document.querySelector('tbody').insertAdjacentHTML('beforeend', `<tr>
                         <td>${item.event}</td>
-                        <td>${item['from-now']}</td>
+                        <td>${item.age}</td>
                         <td>${item['event-end'] || ''}</td>
                         <td>${item.type}</td>
                         <td>${item.description}</td>
