@@ -1,114 +1,216 @@
 [
-    {
+  {
     "event": "BIG BANG",
     "description": "Origin of the observable universe",
     "from-big-bang": 0,
     "from-christ": null,
     "from-now": null
-},
-{
+  },
+  {
     "event": "ATOMS",
     "description": "Formation of first neutral atoms after recombination",
     "from-big-bang": 380000,
     "from-christ": null,
     "from-now": null
-},
-{
+  },
+  {
     "event": "FIRST STARS",
     "description": "First generation of stars formed",
     "from-big-bang": 100000000,
     "from-christ": null,
     "from-now": null
-},
-{
+  },
+  {
     "event": "FIRST GALAXIES",
     "description": "Early galaxies formed",
     "from-big-bang": 1000000000,
     "from-christ": null,
     "from-now": null
-},
-{
+  },
+  {
     "event": "SOLAR SYSTEM",
     "description": "Formation of the Sun and planets",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 4570000000
-},
-{
+  },
+  {
     "event": "GREAT OXYGENATION EVENT",
     "description": "Oxygen began accumulating in Earth's atmosphere",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 2400000000
-},
-{
+  },
+  {
     "event": "FIRST EUKARYOTES",
     "description": "Complex cells with nuclei appeared",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 2100000000
-},
-{
+  },
+  {
     "event": "CAMBRIAN EXPLOSION",
     "description": "Rapid diversification of animal life",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 539000000
-},
-{
+  },
+  {
+    "event": "ORDOVICIAN-SILURIAN EXTINCTION",
+    "description": "First major mass extinction; around 85% of marine species disappeared due to severe glaciation followed by rapid warming and sea-level changes",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 443000000
+  },
+  {
+    "event": "LATE DEVONIAN EXTINCTION",
+    "description": "Second major mass extinction; about 75% of species disappeared due to ocean oxygen depletion, climate fluctuations and volcanic activity",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 374000000
+  },
+  {
+    "event": "PANGAEA FORMATION",
+    "description": "Most of Earth's landmass merged into the supercontinent Pangaea, producing large dry interior deserts",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 300000000
+  },
+  {
+    "event": "PERMIAN-TRIASSIC EXTINCTION",
+    "description": "Largest known mass extinction; around 90–95% of marine species disappeared, mainly due to massive volcanism, global warming, ocean acidification and oxygen depletion",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 252000000
+  },
+  {
+    "event": "PANGAEA BREAKUP",
+    "description": "Pangaea started splitting apart during the Triassic period",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 245000000
+  },
+  {
+    "event": "FIRST DINOSAURS",
+    "description": "Earliest known dinosaurs such as Eoraptor appeared",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 249000000,
+    "event-end": 230000000
+  },
+  {
+    "event": "TRIASSIC-JURASSIC EXTINCTION",
+    "description": "Mass extinction linked to massive volcanism and climate change; dinosaurs became dominant afterward",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 201000000
+  },
+  {
+    "event": "JURASSIC PERIOD",
+    "description": "Dinosaurs diversified and became dominant; early birds appeared and Pangaea split into Laurasia and Gondwana",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 201000000,
+    "event-end": 145000000
+  },
+  {
+    "event": "CRETACEOUS PERIOD",
+    "description": "Flowering plants spread widely; continents moved closer to modern positions; many dinosaur groups evolved",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 145000000,
+    "event-end": 66000000
+  },
+  {
+    "event": "GRASS EVOLUTION",
+    "description": "Early grass ancestors appeared and began spreading",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 70000000
+  },
+  {
+    "event": "TYRANNOSAURUS REX AND TRICERATOPS",
+    "description": "Large late Cretaceous dinosaurs such as T. rex and Triceratops flourished",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 68000000
+  },
+  {
     "event": "K-Pg EXTINCTION",
-    "description": "Mass extinction that ended non-avian dinosaurs",
+    "description": "Asteroid impact near present-day Yucatan caused mass extinction that ended non-avian dinosaurs; around 76% of species disappeared",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 66000000
-},
-{
+  },
+  {
+    "event": "PALEOGENE PERIOD",
+    "description": "Mammals diversified rapidly after dinosaur extinction; early horses, whales, bats and primates evolved",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 66000000,
+    "event-end": 23000000
+  },
+  {
+    "event": "EARLY HOMININS",
+    "description": "Human ancestors such as Australopithecus evolved in Africa",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 3000000
+  },
+  {
     "event": "CONTROL OF FIRE",
-    "description": "Early humans controlled fire",
+    "description": "Early humans learned to control fire",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 1000000
-},
-{
+  },
+  {
     "event": "HOMO SAPIENS",
     "description": "Appearance of modern humans",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 300000
-},
-{
+  },
+  {
     "event": "ART",
-    "description": "Earliest known symbolic art",
+    "description": "Earliest known symbolic cave art and carvings",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 45000
-},
-{
+  },
+  {
     "event": "MUSIC",
-    "description": "Earliest known musical instruments",
+    "description": "Earliest known musical instruments such as bone flutes",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 40000
-},
-{
+  },
+  {
     "event": "AGRICULTURE",
-    "description": "Beginning of organized farming",
+    "description": "Beginning of organized farming and permanent settlements",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 12000
-},
-{
+  },
+  {
+    "event": "HOLOCENE EPOCH",
+    "description": "Current geological epoch that began after the last Ice Age",
+    "from-big-bang": null,
+    "from-christ": null,
+    "from-now": 11700
+  },
+  {
     "event": "MODERN SCIENCE",
-    "description": "Scientific Revolution era",
+    "description": "Scientific Revolution and rise of modern scientific methods",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 400
-},
-{
+  },
+  {
     "event": "PRESENT",
     "description": "Current era",
     "from-big-bang": null,
     "from-christ": null,
     "from-now": 0
-}
+  }
 ]
