@@ -55,10 +55,11 @@
         <table border="1">
             <thead>
                 <tr>
-                    <th>Event</th>
-                    <th>Start</th>
-                    <th>End</th>
                     <th>Type</th>
+                    <th>Event</th>
+                    <th>Age</th>
+                    <th>Year Start</th>
+                    <th>Year End</th>
                     <th>Description</th>
                 </tr>
             </thead>
@@ -90,7 +91,8 @@
             const typeValue = form.eventtype.value;
             const sortValue = parseInt(form.sort.value);
             
-            let processType = data.filter((item) => (typeValue === 'all' || typeValue === item.type));
+            let processFillEmpty = data.map((item) => ({ ...item, age: item.yearstart ? (new Date().getFullYear() - parseInt(item.yearstart)) : item.age }));
+            let processType = processFillEmpty.filter((item) => (typeValue === 'all' || typeValue === item.type));
             let processSort = processType.sort((a, b) => sortValue > 0 ? a.age - b.age : b.age - a.age);
             let processUnit = processSort.map((item) => {
                 if (unitValue) {
@@ -116,10 +118,11 @@
                 document.querySelector('tbody').innerHTML = '';
                 tableData.forEach((item) => {
                     document.querySelector('tbody').insertAdjacentHTML('beforeend', `<tr>
+                        <td>${item.type}</td>
                         <td>${item.event}</td>
                         <td>${item.age}</td>
-                        <td>${item['event-end'] || ''}</td>
-                        <td>${item.type}</td>
+                        <td>${item.yearstart || ''}</td>
+                        <td>${item.yearend || ''}</td>
                         <td>${item.description}</td>
                     </tr>`);
                 });

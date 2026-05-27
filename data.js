@@ -81,9 +81,7 @@ const data = [
     "event": "FIRST DINOSAURS",
     "description": "Early dinosaurs such as Eoraptor evolved. They were relatively small and became ancestors of later dinosaur groups",
     "type": "dinosaur",
-    "age": null,
-    "yearstart": 0,
-    "yearend": 0
+    "age": 249000000
   },
   {
     "event": "LATE TRIASSIC AGE (4th EXTINCTION EVENT)",
@@ -101,17 +99,13 @@ const data = [
     "event": "JURASSIC PERIOD",
     "description": "Dinosaurs became very large and diversified widely. Early birds and flying reptiles appeared. Pangaea separated further into Laurasia and Gondwana",
     "type": "dinosaur",
-    "age": null,
-    "yearstart": 0,
-    "yearend": 0
+    "age": 201000000
   },
   {
     "event": "CRETACEOUS PERIOD",
     "description": "Many varieties of dinosaurs evolved and dominated Earth. Flowering plants spread widely. Sea levels were high and global temperatures were warmer than today. Laurasia and Gondwana separated further and continents gradually moved toward modern positions",
     "type": "dinosaur",
-    "age": null,
-    "yearstart": 0,
-    "yearend": 0
+    "age": 145000000
   },
   {
     "event": "GRASS EVOLUTION",
@@ -135,9 +129,7 @@ const data = [
     "event": "PALEOGENE PERIOD",
     "description": "After the extinction of non-avian dinosaurs, mammals diversified rapidly. Early horses, whales, bats, primates, snakes and many modern bird groups evolved",
     "type": "earth",
-    "age": null,
-    "yearstart": 0,
-    "yearend": 0
+    "age": 66000000
   },
   {
     "event": "EARLY HOMININS",
