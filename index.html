@@ -67,7 +67,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="5">Sources</a></td>
+                    <td colspan="6">Footer</a></td>
                 </tr>
             </tfoot>
         </table>
@@ -92,6 +92,7 @@
             const sortValue = parseInt(form.sort.value);
             
             let processFillEmpty = data.map((item) => ({ ...item, age: item.yearstart ? (new Date().getFullYear() - parseInt(item.yearstart)) : item.age }));
+            let processSortAge = processFillEmpty.sort((a, b) => a.age - b.age);
             let processType = processFillEmpty.filter((item) => (typeValue === 'all' || typeValue === item.type));
             let processSort = processType.sort((a, b) => sortValue > 0 ? a.age - b.age : b.age - a.age);
             let processUnit = processSort.map((item) => {
