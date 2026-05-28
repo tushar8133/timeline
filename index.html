@@ -50,8 +50,14 @@
         .tooltip:hover .tooltiptext {
             visibility: visible;
         }
-        options::first-letter {
-            text-transform: uppercase;
+        td:nth-child(1) {
+            text-transform: lowercase;
+            &::first-letter {
+                text-transform: uppercase;
+            }
+        }
+        td:nth-child(2) {
+            text-transform: capitalize;
         }
     </style>
     <script src="data.js"></script>
@@ -74,15 +80,15 @@
                         Age<br>
                         <select name="units">
                             <option value="0">Auto</option>
-                            <option value="1000000000">Billions</option>
-                            <option value="10000000">Crores</option>
-                            <option value="1000000">Millions</option>
-                            <option value="100000">Lakhs</option>
-                            <option value="1000">Thousands</option>
+                            <option value="1000000000">Billion</option>
+                            <option value="10000000">Crore</option>
+                            <option value="1000000">Million</option>
+                            <option value="100000">Lakh</option>
+                            <option value="1000">Millennium</option>
+                            <option value="100">Century</option>
                             <option value="1">Years</option>
                         </select>
                         <label><input name="reverse" type="checkbox">Reverse</label>
-                        
                     </th>
                     <th>Year Start</th>
                     <th>Year End</th>
@@ -100,11 +106,7 @@
     </form>
     <script>
 
-        var eventTypes = [...new Set(data.map(item => item.type))];
-        eventTypes.forEach(type => {
-            document.querySelector('select[name="eventtype"]').insertAdjacentHTML('beforeend', `<option value="${type}">${type.charAt(0).toUpperCase() + type.slice(1)}</option>`);
-        });
-            
+        [...new Set(data.map(item => item.type.toLowerCase()))].forEach(type => document.querySelector('select[name="eventtype"]').insertAdjacentHTML('beforeend', `<option value="${type}">${type.charAt(0).toUpperCase() + type.slice(1)}</option>`));    
 
         function redraw(form) {
             const fData = new FormData(form);
