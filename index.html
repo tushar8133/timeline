@@ -69,7 +69,7 @@
     <script src="data.js"></script>
 </head>
 <body>
-    <form name="timelineForm" oninput="redraw(this)">
+    <form name="timelineForm" onsubmit="event.preventDefault()" oninput="redraw(this)">
         <table border="1" cellpadding="10" cellspacing="2" width="100%">
             <thead>
                 <tr>
