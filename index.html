@@ -10,67 +10,71 @@
             padding: 0;
             height: 100%;
             width: 100%;
+            background-color: black;
         }
-        main {
-            position: fixed;
-            height: 100%;
-            width: 100%;
+        table {
             background-color: #f0f0f0;
-            overflow-y: scroll;
-        }
-        label {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: smaller;
-            font-weight: lighter;
+            & thead {
+                position: sticky;
+                top: 0;
+                background-color: red;
+                & label {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: smaller;
+                    font-weight: lighter;
+                }
+            }
+            & tfoot {
+                position: sticky;
+                bottom: 0;
+            }
         }
     </style>
     <script src="data.js"></script>
 </head>
 <body>
     <form onchange="redraw(this)">
-        <main>
-            <table border="1" cellpadding="10">
-                <thead>
-                    <tr>
-                        <th>
-                            Type<br>
-                            <select name="eventtype">
-                                <option value="all">All Events</option>
-                            </select>
-                        </th>
-                        <th width="200">
-                            Event<label><input name="recent" type="checkbox">Recent</label>
-                        </th>
-                        <th width="100">
-                            Age<br>
-                            <select name="units">
-                                <option value="0">Auto</option>
-                                <option value="1000000000">billions</option>
-                                <option value="10000000">crores</option>
-                                <option value="1000000">millions</option>
-                                <option value="100000">lakhs</option>
-                                <option value="1000">thousands</option>
-                                <option value="1">years</option>
-                            </select>
-                            <label><input name="reverse" type="checkbox">Reverse</label>
-                            
-                        </th>
-                        <th>Year Start</th>
-                        <th>Year End</th>
-                        <th>Description<label><input name="search" type="search" placeholder="search"></label></th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="6">Footer</a></td>
-                    </tr>
-                </tfoot>
-            </table>
-        </main>
+        <table border="1" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>
+                        Type<br>
+                        <select name="eventtype">
+                            <option value="all">All Events</option>
+                        </select>
+                    </th>
+                    <th width="200">
+                        Event<label><input name="recent" type="checkbox">Recent</label>
+                    </th>
+                    <th width="100">
+                        Age<br>
+                        <select name="units">
+                            <option value="0">Auto</option>
+                            <option value="1000000000">billions</option>
+                            <option value="10000000">crores</option>
+                            <option value="1000000">millions</option>
+                            <option value="100000">lakhs</option>
+                            <option value="1000">thousands</option>
+                            <option value="1">years</option>
+                        </select>
+                        <label><input name="reverse" type="checkbox">Reverse</label>
+                        
+                    </th>
+                    <th>Year Start</th>
+                    <th>Year End</th>
+                    <th>Description<label><input name="search" type="search" placeholder="search"></label></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6">Footer</a></td>
+                </tr>
+            </tfoot>
+        </table>
     </form>
     <script>
 
