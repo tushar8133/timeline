@@ -24,54 +24,60 @@
             background-color: #f0f0f0;
             overflow-y: scroll;
         }
+        label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: smaller;
+            font-weight: lighter;
+        }
     </style>
     <script src="data.js"></script>
 </head>
 <body>
-    <header>
-        <form onchange="redraw(this)">
-            <input name="search" type="search" placeholder="search">
-            <select name="units">
-                <option value="0">Auto</option>
-                <option value="1000000000">billions</option>
-                <option value="10000000">crores</option>
-                <option value="1000000">millions</option>
-                <option value="100000">lakhs</option>
-                <option value="1000">thousands</option>
-                <option value="1">years</option>
-            </select>
-            <select name="eventtype">
-                <option value="all">All Events</option>
-            </select>
-            <label>
-                <input name="sort" type="radio" value="+1"> Ascending
-            </label>
-            <label>
-                <input name="sort" type="radio" value="-1" checked> Descending
-            </label>
-        </form>
-    </header>
-    <main>
-        <table border="1" cellpadding="10">
-            <thead>
-                <tr>
-                    <th>Type</th>
-                    <th width="200">Event</th>
-                    <th width="100">Age</th>
-                    <th>Year Start</th>
-                    <th>Year End</th>
-                    <th>Description</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="6">Footer</a></td>
-                </tr>
-            </tfoot>
-        </table>
-    </main>
+    <form onchange="redraw(this)">
+        <main>
+            <table border="1" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>
+                            Type<br>
+                            <select name="eventtype">
+                                <option value="all">All Events</option>
+                            </select>
+                        </th>
+                        <th width="200">
+                            Event<label><input name="recent" type="checkbox">Recent</label>
+                        </th>
+                        <th width="100">
+                            Age<br>
+                            <select name="units">
+                                <option value="0">Auto</option>
+                                <option value="1000000000">billions</option>
+                                <option value="10000000">crores</option>
+                                <option value="1000000">millions</option>
+                                <option value="100000">lakhs</option>
+                                <option value="1000">thousands</option>
+                                <option value="1">years</option>
+                            </select>
+                            <label><input name="reverse" type="checkbox" checked> Reverse</label>
+                            
+                        </th>
+                        <th>Year Start</th>
+                        <th>Year End</th>
+                        <th>Description<label><input name="search" type="search" placeholder="search"></label></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">Footer</a></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
+    </form>
     <script>
 
         var eventTypes = [...new Set(data.map(item => item.type))];
@@ -89,12 +95,13 @@
             const unitValue = parseInt(form.units.value);
             const unitText = form.units.options[form.units.selectedIndex].text;
             const typeValue = form.eventtype.value;
-            const sortValue = parseInt(form.sort.value);
+            const recentValue = form.recent.checked;
+            const reverseValue = form.reverse.checked;
             
             let processFillEmpty = data.map((item) => ({ ...item, age: item.yearstart ? (new Date().getFullYear() - parseInt(item.yearstart)) : item.age }));
             let processSortAge = processFillEmpty.sort((a, b) => a.age - b.age);
             let processType = processFillEmpty.filter((item) => (typeValue === 'all' || typeValue === item.type));
-            let processSort = processType.sort((a, b) => sortValue > 0 ? a.age - b.age : b.age - a.age);
+            let processSort = processType.sort((a, b) => recentValue ? a.age - b.age : b.age - a.age);
             let processUnit = processSort.map((item) => {
                 if (unitValue) {
                     return {...item, age:  `${item.age / unitValue} ${unitText.slice(0,2)}` }
