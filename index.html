@@ -69,7 +69,7 @@
     <script src="data.js"></script>
 </head>
 <body>
-    <form oninput="redraw(this)">
+    <form name="timelineForm" oninput="redraw(this)">
         <table border="1" cellpadding="10" cellspacing="2" width="100%">
             <thead>
                 <tr>
@@ -112,8 +112,6 @@
     </form>
     <script>
 
-        [...new Set(data.map(item => item.type.toLowerCase()))].forEach(type => document.querySelector('select[name="eventtype"]').insertAdjacentHTML('beforeend', `<option value="${type}">${type.charAt(0).toUpperCase() + type.slice(1)}</option>`));
-        
         function redraw(form) {
             const fData = new FormData(form);
             const fromEntries = Array.from(fData);
@@ -149,48 +147,51 @@
                     return {...item, age:  `${Number((item.age / divisor).toFixed(3))} ${noUnits ? 'years' : selectedOption.text}` };
                 }
             });
-
             drawTable(processUnit);
         }
 
         function drawTable(tableData) {
-                document.querySelector('tbody').innerHTML = '';
-                tableData.forEach((item) => {
-                    document.querySelector('tbody').insertAdjacentHTML('beforeend', `<tr>
-                        <td>${item.type}</td>
-                        <td>${item.event}</td>
-                        <td class="tooltip"><span class="tooltiptext">${item.tooltip}</span>${item.age}</td>
-                        <td>${item.yearstart || ''}</td>
-                        <td>${item.yearend || ''}</td>
-                        <td>${item.description}</td>
-                    </tr>`);
-                });
+            document.querySelector('tbody').innerHTML = '';
+            tableData.forEach((item) => {
+                document.querySelector('tbody').insertAdjacentHTML('beforeend', `<tr>
+                    <td>${item.type}</td>
+                    <td>${item.event}</td>
+                    <td class="tooltip"><span class="tooltiptext">${item.tooltip}</span>${item.age}</td>
+                    <td>${item.yearstart || ''}</td>
+                    <td>${item.yearend || ''}</td>
+                    <td>${item.description}</td>
+                </tr>`);
+            });
         }
-
+        
         function restoreForm() {
-            const savedForm = localStorage.getItem('timelineForm');
-            if (savedForm) {
-                const formObject = JSON.parse(savedForm);
-                Object.keys(formObject).forEach(key => {
-                    const element = document.querySelector(`[name="${key}"]`);
-                    if (element) {
-                        if (element.type === 'checkbox') {
-                            element.checked = formObject[key] === 'on';
-                        } else {
-                            element.value = formObject[key];
-                        }
+            try {
+                Object.entries(JSON.parse(localStorage.getItem('timelineForm'))).forEach(([key, value]) => {
+                    const el = timelineForm[key];
+                    switch (el.type) {
+                        case "checkbox": el.checked = true; break;
+                        case "radio": el.checked = true; break;
+                        default: el.value = value; break;
                     }
                 });
+            } catch (e) {
+                console.error('Error restoring form:', e);
             }
         }
 
         function resetForm() {
-            document.forms[0].reset();
+            timelineForm.reset();
             localStorage.removeItem('timelineForm');
-            redraw(document.forms[0]);
+            redraw(timelineForm);
         }
 
-        redraw(document.forms[0]);
+        function initEventType() {
+            Array.from(new Set(data.map(item => item.type.toLowerCase()))).sort().forEach(type => timelineForm.eventtype.insertAdjacentHTML('beforeend', `<option value="${type}">${type.charAt(0).toUpperCase() + type.slice(1)}</option>`));
+        }
+
+        initEventType();
+        restoreForm();
+        redraw(timelineForm);
     </script>
 </body>
 </html>
