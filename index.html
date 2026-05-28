@@ -27,6 +27,8 @@
             & tfoot {
                 position: sticky;
                 bottom: 0;
+                text-align: right;
+                background-color: bisque;
             }
         }
         .tooltip {
@@ -103,20 +105,20 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="6">Footer</a></td>
+                    <td colspan="6"><button type="button" onclick="resetForm()">Reset</button></td>
                 </tr>
             </tfoot>
         </table>
     </form>
     <script>
 
-        [...new Set(data.map(item => item.type.toLowerCase()))].forEach(type => document.querySelector('select[name="eventtype"]').insertAdjacentHTML('beforeend', `<option value="${type}">${type.charAt(0).toUpperCase() + type.slice(1)}</option>`));    
-
+        [...new Set(data.map(item => item.type.toLowerCase()))].forEach(type => document.querySelector('select[name="eventtype"]').insertAdjacentHTML('beforeend', `<option value="${type}">${type.charAt(0).toUpperCase() + type.slice(1)}</option>`));
+        
         function redraw(form) {
             const fData = new FormData(form);
             const fromEntries = Array.from(fData);
             const formObject = Object.fromEntries(fromEntries);
-            console.log(formObject)
+            localStorage.setItem('timelineForm', JSON.stringify(formObject));
             const searchValue = form.search.value.toLowerCase();
             const unitValue = parseInt(form.units.value);
             const unitText = form.units.options[form.units.selectedIndex].text;
@@ -163,6 +165,29 @@
                         <td>${item.description}</td>
                     </tr>`);
                 });
+        }
+
+        function restoreForm() {
+            const savedForm = localStorage.getItem('timelineForm');
+            if (savedForm) {
+                const formObject = JSON.parse(savedForm);
+                Object.keys(formObject).forEach(key => {
+                    const element = document.querySelector(`[name="${key}"]`);
+                    if (element) {
+                        if (element.type === 'checkbox') {
+                            element.checked = formObject[key] === 'on';
+                        } else {
+                            element.value = formObject[key];
+                        }
+                    }
+                });
+            }
+        }
+
+        function resetForm() {
+            document.forms[0].reset();
+            localStorage.removeItem('timelineForm');
+            redraw(document.forms[0]);
         }
 
         redraw(document.forms[0]);
