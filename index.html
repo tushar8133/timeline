@@ -11,15 +11,9 @@
             height: 100%;
             width: 100%;
         }
-        header {
-            position: fixed;
-            top: 0;
-            height: 30px;
-        }
         main {
             position: fixed;
-            top: 30px;
-            height: calc(100% - 30px);
+            height: 100%;
             width: 100%;
             background-color: #f0f0f0;
             overflow-y: scroll;
@@ -60,7 +54,7 @@
                                 <option value="1000">thousands</option>
                                 <option value="1">years</option>
                             </select>
-                            <label><input name="reverse" type="checkbox" checked> Reverse</label>
+                            <label><input name="ago" type="checkbox" checked>Ago</label>
                             
                         </th>
                         <th>Year Start</th>
@@ -96,8 +90,8 @@
             const unitText = form.units.options[form.units.selectedIndex].text;
             const typeValue = form.eventtype.value;
             const recentValue = form.recent.checked;
-            const reverseValue = form.reverse.checked;
-            
+            const agoValue = form.ago.checked;
+
             let processFillEmpty = data.map((item) => ({ ...item, age: item.yearstart ? (new Date().getFullYear() - parseInt(item.yearstart)) : item.age }));
             let processSortAge = processFillEmpty.sort((a, b) => a.age - b.age);
             let processType = processFillEmpty.filter((item) => (typeValue === 'all' || typeValue === item.type));
