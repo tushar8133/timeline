@@ -54,7 +54,7 @@
                                 <option value="1000">thousands</option>
                                 <option value="1">years</option>
                             </select>
-                            <label><input name="ago" type="checkbox" checked>Ago</label>
+                            <label><input name="reverse" type="checkbox">Reverse</label>
                             
                         </th>
                         <th>Year Start</th>
@@ -89,16 +89,16 @@
             const unitValue = parseInt(form.units.value);
             const unitText = form.units.options[form.units.selectedIndex].text;
             const typeValue = form.eventtype.value;
-            const recentValue = form.recent.checked;
-            const agoValue = form.ago.checked;
+            const isRecent = form.recent.checked;
+            const isReverse = form.reverse.checked;
 
-            let processFillEmpty = data.map((item) => ({ ...item, age: item.yearstart ? (new Date().getFullYear() - parseInt(item.yearstart)) : item.age }));
-            let processSortAge = processFillEmpty.sort((a, b) => a.age - b.age);
-            let processType = processFillEmpty.filter((item) => (typeValue === 'all' || typeValue === item.type));
-            let processSort = processType.sort((a, b) => recentValue ? a.age - b.age : b.age - a.age);
+            let processAge = data.map((item) => ({ ...item, age: item.yearstart ? (new Date().getFullYear() - parseInt(item.yearstart)) : item.age }));
+            let processType = processAge.filter((item) => (typeValue === 'all' || typeValue === item.type));
+            let processSort = processType.sort((a, b) => isRecent ? a.age - b.age : b.age - a.age);
             let processUnit = processSort.map((item) => {
+                item.age = isReverse ? 13800000000 - item.age : item.age;
                 if (unitValue) {
-                    return {...item, age:  `${item.age / unitValue} ${unitText.slice(0,2)}` }
+                    return {...item, age:  `${item.age / unitValue} ${unitText}` }
                 } else {
                     const optionsArray = Array.from(form.units.options).slice(1);
                     let selectedOption = optionsArray[optionsArray.length - 1];
@@ -110,7 +110,7 @@
                     }
                     const divisor = parseInt(selectedOption.value);
                     const noUnits = selectedOption.text === 'years';
-                    return {...item, age:  `${(item.age / divisor).toFixed(noUnits ? 0 : 2)} ${noUnits ? 'years' : selectedOption.text}` }
+                    return {...item, age:  `${(item.age / divisor)} ${noUnits ? 'years' : selectedOption.text}` };
                 }
             });
 
