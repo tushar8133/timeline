@@ -124,9 +124,9 @@
             let processAge = data.map((item) => ({ ...item, age: item.yearstart ? (new Date().getFullYear() - parseInt(item.yearstart)) : item.age }));
             let processType = processAge.filter((item) => (typeValue === 'all' || typeValue === item.type));
             let processSort = processType.sort((a, b) => isRecent ? a.age - b.age : b.age - a.age);
-            let processTooltip = processSort.map((item) => ({ ...item, tooltip: Array.from(form.units.options).slice(1).map(opt => `<div>${Number((item.age/opt.value).toFixed(2))} &mdash;&nbsp;</div><div>${opt.text.replace(/^./, (match) => match.toUpperCase())}</div>`).join('') }));
+            let processDateReverse = processSort.map((item) => ({ ...item, age: isReverse ? 13800000000 - item.age : item.age }));
+            let processTooltip = processDateReverse.map((item) => ({ ...item, tooltip: Array.from(form.units.options).slice(1).map(opt => `<div>${Number((item.age/opt.value).toFixed(2))} &mdash;&nbsp;</div><div>${opt.text.replace(/^./, (match) => match.toUpperCase())}</div>`).join('') }));
             let processUnit = processTooltip.map((item) => {
-                item.age = isReverse ? 13800000000 - item.age : item.age;
                 if (unitValue) {
                     return {...item, age:  `${item.age / unitValue} ${unitText}` }
                 } else {
