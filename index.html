@@ -132,7 +132,7 @@
             let processTooltip = processDateReverse.map((item) => ({ ...item, tooltip: Array.from(form.units.options).slice(1).map(opt => `<div>${Number((item.age/opt.value).toFixed(2))} &mdash;&nbsp;</div><div>${opt.text.replace(/^./, (match) => match.toUpperCase())}</div>`).join('') }));
             let processUnit = processTooltip.map((item) => {
                 if (unitValue) {
-                    return {...item, age:  `${item.age / unitValue} ${unitText}` }
+                    return {...item, age:  `${Number((item.age / unitValue).toFixed(5))} ${unitText}` }
                 } else {
                     const optionsArray = Array.from(form.units.options).slice(1);
                     let selectedOption = optionsArray[optionsArray.length - 1];
