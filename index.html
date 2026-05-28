@@ -32,6 +32,8 @@
         }
         .tooltip {
             cursor: default;
+            user-select: none;
+            white-space: nowrap;
         }
         .tooltiptext {
             visibility: hidden;
@@ -142,7 +144,7 @@
                     }
                     const divisor = parseInt(selectedOption.value);
                     const noUnits = selectedOption.text === 'years';
-                    return {...item, age:  `${(item.age / divisor)} ${noUnits ? 'years' : selectedOption.text}` };
+                    return {...item, age:  `${Number((item.age / divisor).toFixed(3))} ${noUnits ? 'years' : selectedOption.text}` };
                 }
             });
 
