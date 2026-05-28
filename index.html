@@ -31,6 +31,28 @@
                 bottom: 0;
             }
         }
+        .tooltiptext {
+            visibility: hidden;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            margin: -30px 0px 0px 115px;
+            font-size: small;
+            display: grid;
+            grid-template-columns: auto auto;
+            > div:nth-child(odd) {
+                text-align: right;
+            }
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+        options::first-letter {
+            text-transform: uppercase;
+        }
     </style>
     <script src="data.js"></script>
 </head>
@@ -52,12 +74,12 @@
                         Age<br>
                         <select name="units">
                             <option value="0">Auto</option>
-                            <option value="1000000000">billions</option>
-                            <option value="10000000">crores</option>
-                            <option value="1000000">millions</option>
-                            <option value="100000">lakhs</option>
-                            <option value="1000">thousands</option>
-                            <option value="1">years</option>
+                            <option value="1000000000">Billions</option>
+                            <option value="10000000">Crores</option>
+                            <option value="1000000">Millions</option>
+                            <option value="100000">Lakhs</option>
+                            <option value="1000">Thousands</option>
+                            <option value="1">Years</option>
                         </select>
                         <label><input name="reverse" type="checkbox">Reverse</label>
                         
@@ -99,7 +121,8 @@
             let processAge = data.map((item) => ({ ...item, age: item.yearstart ? (new Date().getFullYear() - parseInt(item.yearstart)) : item.age }));
             let processType = processAge.filter((item) => (typeValue === 'all' || typeValue === item.type));
             let processSort = processType.sort((a, b) => isRecent ? a.age - b.age : b.age - a.age);
-            let processUnit = processSort.map((item) => {
+            let processTooltip = processSort.map((item) => ({ ...item, tooltip: Array.from(form.units.options).slice(1).map(opt => `<div>${Number((item.age/opt.value).toFixed(2))} &mdash;&nbsp;</div><div>${opt.text.replace(/^./, (match) => match.toUpperCase())}</div>`).join('') }));
+            let processUnit = processTooltip.map((item) => {
                 item.age = isReverse ? 13800000000 - item.age : item.age;
                 if (unitValue) {
                     return {...item, age:  `${item.age / unitValue} ${unitText}` }
@@ -127,7 +150,7 @@
                     document.querySelector('tbody').insertAdjacentHTML('beforeend', `<tr>
                         <td>${item.type}</td>
                         <td>${item.event}</td>
-                        <td>${item.age}</td>
+                        <td class="tooltip"><span class="tooltiptext">${item.tooltip}</span>${item.age}</td>
                         <td>${item.yearstart || ''}</td>
                         <td>${item.yearend || ''}</td>
                         <td>${item.description}</td>
